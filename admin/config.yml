@@ -2,3 +2,17 @@ backend:
   name: github
   repo: nmillin/singleagestate
   branch: main
+
+# 1. Define the media folder (Required)
+media_folder: /public/media
+public_folder: /media
+
+# 2. Define at least one collection (Required)
+collections:
+  - name: posts
+    label: Posts
+    folder: /content/posts
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: richtext }
