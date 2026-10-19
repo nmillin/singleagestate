@@ -16,3 +16,14 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Body, name: body, widget: richtext }
+
+  # File Collection for Static Pages
+  - name: pages
+    label: Pages
+    files:
+      - name: about
+        label: About Page
+        file: content/pages/about.md
+        fields:
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: richtext }
